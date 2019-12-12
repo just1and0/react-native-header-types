@@ -33,12 +33,13 @@ constructor(props) {
        }
        return (
          <View>
+                 {this.props.showHeaderTitle !== false &&
                <View style={[ { backgroundColor:headerBackgroundColor, }, styles.container]} >
                         <Text style={[{color:headerTitleColor}, styles.title]} >{this.props.headerTitle}</Text>
                         <View style={{flex:1, alignItems:'flex-end'}}>
                             <Text style={[{color:headerTitleColor}, styles.title]} > {currentprogress}/{totalProgress}  </Text>
                         </View>
-               </View>
+               </View>}
                <View style={[{ borderBottomWidth:1, borderBottomColor:progressBottomBarColor }, styles.progressbar]} >
                               {myloop}
                         

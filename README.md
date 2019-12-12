@@ -60,7 +60,8 @@ constructor(props) {
 					totalProgress="5"
 					progressBottomBarColor="#5DB482"
 					progressInactiveColor="#F8F8F8"
-					progressActiveColor="#5DB482"/>
+					progressActiveColor="#5DB482"
+					showHeaderTitle={false}/>
 
 				</View>
 			);
@@ -89,6 +90,7 @@ const  styles  =  StyleSheet.create({
 |progressBottomBarColor| string | no | color of progress bar bottom color | null |
 |progressInactiveColor| string | no | Inactive progress bar color | null |
 |progressActiveColor| string| no | active progress bar color | null |
+|showHeaderTitle| boolean| no | show or hide header content| true |
  
 
 
